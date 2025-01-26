@@ -1,0 +1,1 @@
+A simple blinky Echo OS project for a [STM32 Discovery Board.](https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F407G-DISC1/5824404?gQT=2) This example demonstrates how to use tasks, software times, event groups, semaphores, and message queues.
