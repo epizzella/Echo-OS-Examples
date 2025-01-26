@@ -35,6 +35,8 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
+*.elf
 
 # Debug files
 *.dSYM/
@@ -50,3 +52,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Zig
+zig-cache/
+.zig-cache/
+zig-out
+.zig-out

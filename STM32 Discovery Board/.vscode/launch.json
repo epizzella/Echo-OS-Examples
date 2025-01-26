@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "./Bin/DISCO_RTOS.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "zigMain",
+            "servertype": "openocd",
+            "device": "STM32f407VG",
+            "interface": "swd",
+            "svdFile": "stm32f407.svd",
+            "configFiles": 
+            [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg",
+            ],
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4,
+            },
+            "gdbPath": "arm-none-eabi-gdb",
+        }
+    ]
+    
+}
